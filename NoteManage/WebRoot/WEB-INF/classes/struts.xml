@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <!DOCTYPE struts PUBLIC
+      "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+      "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="struts2" namespace="/mystruts" extends="struts-default">
+        <action name="sum" class="action.FirstAction" method="calculate">
+            <result name="positive">/positive.jsp</result>
+            <result name="negative">/negative.jsp</result>
+        </action>
+    </package>
+    <package name="noteManage" namespace="/noteManage" extends="struts-default">
+        <action name="login" class="action.NoteManageAction" method="login">
+            <result name="fail">/note/login.jsp</result>
+            <result name="sucess">/note/index.jsp</result>
+        </action>
+    </package>
+</struts>
