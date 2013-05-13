@@ -12,6 +12,7 @@ public class FirstAction extends ActionSupport
     public String calculate()throws Exception{
     	if (getSum() >= 0)  // 如果代码数和是非负整数，跳到positive.jsp页面
         {
+			//add some comment for test
             return "positive";
         }
         else  // 如果代码数和是负整数，跳到negative.jsp页面
